@@ -1,0 +1,11 @@
+Use button page to highlight a button:
+document.getElementById('btn_one');
+
+Use accordion page to return all accordion headers by class:
+document.getElementsByClassName('accordion-header');
+
+Use Calculator(JS) page to return all input tags:
+document.getElementsByTagName('input');
+
+On the accordion page, change the text of the h2 element:
+document.querySelector("#content").innerHTML = "Hello World!";
