@@ -35,6 +35,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven
 
+      - name: Debug File Structure
+        run: ls -R src/test/resources
+
+
       # Step 4: Run Maven with TestNG suite
       - name: Run TestNG Tests
         run: mvn clean test -Dsurefire.suiteXmlFiles="${{ github.workspace }}/src/test/resources/testng.xml"
