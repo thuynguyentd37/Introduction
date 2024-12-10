@@ -38,4 +38,4 @@ jobs:
       # Step 4: Run Maven build and TestNG tests
       - name: Run TestNG Tests
         run: |
-          mvn clean test -DsuiteXmlFile=src/test/resources/testng.xml
+          mvn clean test -DsuiteXmlFile=src/test/resources/testng.xml -X -e
